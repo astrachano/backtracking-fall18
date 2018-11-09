@@ -43,8 +43,8 @@ public class IterativeBlobModel extends BlobModel {
         int[] colDelta = {0,0,-1,1};
         
         if (myGrid[row][col] != lookFor) return 0; // not part of blob
-        Queue<Pair> qp = new LinkedList<>();
         
+        Queue<Pair> qp = new LinkedList<>();       
         myGrid[row][col] = fillWith;  // mark pixel
         size++;                       // count pixel
         qp.add(myPairGrid[row][col]);
